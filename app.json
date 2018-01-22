@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/Default",
+    "pages/detail/chooseName",
+    "pages/detail/prjDetail",
+    "pages/logs/logs",
+    "pages/component/mykey",
+    "pages/aboutme/usercenter",
+    "pages/aboutme/mycard",
+    "pages/aboutme/mylove",
+    "pages/aboutme/mycart",
+    "pages/aboutme/addaddress",
+    "pages/aboutme/order",
+    "pages/aboutme/addaddresstemplate",
+    "pages/aboutme/onOrder",
+    "pages/detail/showMap",
+    
+    "pages/shopcart/usercart"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "单纯的小狗子",
+    "navigationBarTextStyle":"black"
+  }
+
+
+}

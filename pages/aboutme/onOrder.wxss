@@ -1,0 +1,63 @@
+/* pages/aboutme/onOrder.wxss */
+.owerAdrress{
+  position:fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  background: red;
+  height: 170rpx;
+  padding: 20rpx;
+}
+.myAdrress{
+  border-bottom: 1px solid #ccc;
+}
+.my_order_info{
+  position: fixed;
+  top: 210rpx;
+  bottom: 110rpx;
+  background: yellow;
+  width: 750rpx;
+}
+.pay_off_bottom{
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:red;
+  height:110rpx;
+  line-height:110rpx;
+  display:flex;
+  font-size:30rpx;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+.pay_off_bottom>button{
+  height:80rpx;
+  line-height:80rpx;
+  border-radius:80rpx;
+  background:#FE4070;
+  color:#fff;
+  width:220rpx;
+  display:inline-block;
+  margin:15rpx 0 0 0;
+  font-size:30rpx;
+}
+
+/* 显示订单信息部分
+ */
+ .my_order_show{
+   display: flex;
+   height: 200rpx;
+   flex-direction: row;
+ }
+  .my_order_show>view:first-child{
+    width: 200rpx;
+  }
+  .my_order_show>view:nth-child(2){
+    width:450rpx;
+  }
+  .my_order_show>view:last-child{
+    width: 100rpx;
+  }
+
+  

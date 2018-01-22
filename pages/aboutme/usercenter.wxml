@@ -1,0 +1,15 @@
+   <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <view class = "userBaseInfo" wx:else>
+      <image data-width = "200"  bindload="imageLoad" mode='heightFix' style="width:{{ images.width }}rpx; height:{{ images.height }}rpx;" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view> 
+  </view>
+  <view class='user_help_list'>
+    <navigator url = 'mycard'><text class='fa fa-money' style='color:#FF7F50'></text>我的优惠券 <text  class="fa fa-angle-right" ></text></navigator> 
+    <navigator url = 'mylove'><text class='fa fa-heart-o' style='color:red'></text>我的收藏 <text  class="fa fa-angle-right" ></text></navigator>
+    <navigator url = 'mycart'><text class='fa fa-cart-plus' style='color:#FF7F50'></text>我的购物车 <text  class="fa fa-angle-right" ></text></navigator>
+    <navigator url = 'order'><text class='fa fa-bars' style='color:red'></text>我的订单 <text  class="fa fa-angle-right" ></text></navigator>
+    <navigator url = 'addaddress'><text class='fa fa-location-arrow' style='color:#4682B4'></text>我的地址 <text  class="fa fa-angle-right" ></text></navigator>
+    <navigator url = ''><text class='fa fa-phone-square' style='color:#4682B4'></text>我的客服 <text  class="fa fa-angle-right" ></text></navigator>
+  </view>

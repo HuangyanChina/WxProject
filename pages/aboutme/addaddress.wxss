@@ -1,0 +1,49 @@
+/* pages/aboutme/addaddress.wxss */
+.address_list{
+  background-color: #EDEDED;
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  bottom: 93rpx; 
+}
+.address_detail{
+  font-size:35rpx;
+  line-height:67rpx;
+  background:#fff;
+  padding:20rpx 25rpx 0 25rpx;
+  margin:10rpx 0 20rpx 0;
+}
+.left_right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.add_bottom_border{
+  border-bottom: 1px solid 	rgba(220,220,220,0.7);
+}
+
+/* 改变收货地址操作处样式 */
+.option_address{
+  line-height: 100rpx;
+}
+.edit_del {
+  font-size: 35rpx;
+  color: #696969;
+}
+.edit_del .fa{
+  font-size: 45rpx; 
+}
+.add_address_btn{
+  background: #EB6029;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  border-radius: 0; 
+}

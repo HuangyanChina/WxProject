@@ -1,0 +1,7 @@
+@import "mykey.js";
+<template name="myTemplate">
+  <view class='controlBtnWarp'>
+      <text bindtap='changeHtml' data-nurl = "aboutme/usercenter"> <text class="fa fa-camera-retro fa-lg"></text></text>
+      <text bindtap='changeHtml' data-nurl = "shopcart/usercart">车</text>
+  </view>
+</template>

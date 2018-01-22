@@ -1,0 +1,103 @@
+/* pages/aboutme/mycart.wxss */
+.has_no_love{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.has_no_love>image{
+  margin: 50rpx 0;
+}
+.has_no_love>text{
+  font-size: 35rpx;
+  color: #666;
+}
+.has_no_love>navigator{
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  color: red;
+}
+.prj_info{
+  border-top:1px solid #D8D8D8;
+  display: flex;
+  height: 250rpx;
+  width: 750rpx;
+}
+.prj_info>view:first-child{
+  width: 100rpx;
+}
+.prj_info>view:nth-child(2){
+  width: 200rpx;
+}
+.prj_info>view:last-child{
+  width: 450rpx;
+  padding: 20rpx;
+}
+.prj_info>view:not(:last-child){
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.inline_block{
+  display: inline-block
+}
+.prj_num_warp{
+  margin: 10rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.space_between{
+  line-height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  font-size: 30rpx
+}
+.cart_head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+.delete_prj{
+  border: 1px solid #EB5979;
+  color: #EB5979;
+  padding: 0rpx 50rpx;
+  border-radius: 60rpx;
+}
+.not_delete_prj{
+    border: 1px solid #E3E3E3;
+    color: #9D9C9D;
+    padding: 15rpx 50rpx;
+    border-radius: 60rpx; 
+}
+
+/* 购物车底部 */
+.cart_bottom{
+  background: #fff;
+  line-height: 70rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70rpx;
+  border-top:1px solid #D8D8D8;
+}
+.pay_off_money{
+  padding: 0 50rpx;
+  color: #fff;
+  background: #E95071;
+  border-radius: 60rpx;
+}
+
+/* 装载商品的盒子 */
+.prj_list_warp{
+  position: absolute;
+  bottom: 120rpx;
+  top: 90rpx;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+}

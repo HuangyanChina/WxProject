@@ -1,0 +1,38 @@
+/* pages/aboutme/usercenter.wxss */
+.userinfo{
+  height: 300rpx;
+  width: 750rpx;
+  background: 	#6495ED;
+}
+.userBaseInfo{
+  padding-top: 35rpx; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userBaseInfo image{
+  border-radius: 200rpx;
+}
+.user_help_list{
+  display: flex;
+  flex-direction: column;
+  background:	rgba(230,230,250,0.6);
+  width: 750rpx;
+}
+.user_help_list>navigator{
+  font-size: 35rpx;
+  line-height: 100rpx;
+  background: #fff;
+  width: 750rpx;
+  text-indent: 10rpx;
+  border-bottom: 1px solid 	rgba(220,220,220,0.7);
+  margin-top: 10rpx; 
+}
+.user_help_list>navigator .fa:nth-child(even){
+  float: right;
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+}
+.user_help_list>navigator .fa:nth-child(odd){
+  margin-right: 10rpx;
+}

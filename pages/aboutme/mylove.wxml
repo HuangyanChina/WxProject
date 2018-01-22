@@ -1,0 +1,5 @@
+<view class='has_no_love'>
+<image src='../index/img/nolove.png' style='width:250rpx;height:250rpx'></image>
+<text>暂无收藏</text>
+<navigator url='../detail/Default'>开始浏览</navigator>
+</view>

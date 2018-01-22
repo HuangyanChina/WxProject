@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class='flexwarp' bind:touchstart ='showseachinput'>
+  <test class = 'take_erweima iconfont icon-login104' style='font-size:90rpx'></test>
+  <input class='searchInput' placeholder='搜索美食'/>
+  <!-- <test class = 'needflex'>搜索</test> -->
+  <!-- <test class = 'lookmore' bind:tap = 'showClassifyWarp'>更多</test> -->
+</view>
+<view wx:if = "{{isChooseClass}}" class='flexwarp classfiywarp' bind:touchstart ='showseachinput'>
+  <view class = 'classifybtn' wx:for = "{{classfiylist}}" wx:for-item = "item" data-index = "{{index}}" wx:key = "key">
+    {{item.name}}
+  </view>
+</view>
+  <scroll-view class="tab-scoller " scroll-x="true"  scroll-left="{{scrollLength}}">
+      <block wx:for="{{listTab}}" wx:key="id">
+            <view class="tab-view" data-index="{{index}}" id="{{item.code}}" bindtap="reflashData">
+                  <text class="tab-text active" wx:if="{{index == curIndex}}">{{item.text}}</text>
+                  <text class="tab-text" wx:else>{{item.text}}</text>
+
+            </view>
+      </block>
+</scroll-view> 
+
+<view class='production_card_warp' style="width:100%;heigth:100%;">
+      <navigator  url='./chooseName?id=productsListOne' class='productionCard' wx:for="{{curText}}" wx:for-item = "item" wx:key="key"  data-index = "{{item.name}}" style=" font-size:1.5rem">
+       <view style='height:400rpx;width:750rpx;overflow:hidden'> 
+        <image mode = 'widthFix' style='width:750rpx' src='{{item.image}}'></image>
+       </view>   
+        <view class='product_name'>{{item.name}}</view>
+        <view class='product_descript'>{{item.descript}}</view>  
+      </navigator>
+</view>

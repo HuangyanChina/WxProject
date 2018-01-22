@@ -1,0 +1,17 @@
+<!--index.wxml-->
+
+<view class="container" style='height:{{bgHeight}}rpx'>
+<view>
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <view class="userinfoindex" wx:else>
+    <image style='width:250rpx;height:250rpx;border-radius:250rpx' class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text style='color:#000' class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+</view>
+    <view class="navtitlewarp">
+         <navigator class='navititle_child' url="../detail/Default" hover-class="navigator-hover">开始探索</navigator> 
+          <navigator  class='navititle_child'url="../aboutme/usercenter" hover-class="navigator-hover">我的所有</navigator>
+        <!-- <view class='navititle_child' bindtap='shapOther'>分享</view> -->
+      <!-- </text> -->
+    </view> 
+</view>

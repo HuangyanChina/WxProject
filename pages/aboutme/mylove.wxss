@@ -1,0 +1,18 @@
+/* pages/aboutme/mylove.wxss */
+.has_no_love{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.has_no_love>image{
+  margin: 50rpx 0;
+}
+.has_no_love>text{
+  font-size: 35rpx;
+  color: #666;
+}
+.has_no_love>navigator{
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  color: red;
+}

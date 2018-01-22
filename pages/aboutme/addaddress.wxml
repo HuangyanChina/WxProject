@@ -1,0 +1,18 @@
+<view class='address_list'>
+ <radio-group class="radio-group" bindchange="radioChange">
+  <view class='address_detail' wx:for = "{{addressInfoList}}" wx:for-item = "item" wx:key = "key">
+    <view class='name_tel left_right'><text>{{item.name}}</text><text>{{item.people_tel}}</text></view>
+    <view class='add_bottom_border'>{{item.address_province+item.address_city+item.address_country+item.address_value}}</view>
+    <view class='left_right option_address'>  
+      <label class="radio">
+        <radio value="{{item.address_id}}" color='#D95942' checked='{{item.is_default}}'/>默认
+      </label>   
+       <text class='edit_del'>
+          <text style='margin-right:20rpx'><text class='fa fa-pencil-square-o'></text>编辑</text>
+          <text><text class='fa fa-trash'></text>删除</text>
+       </text>
+    </view>
+  </view>
+  </radio-group>
+</view>
+<button class='add_address_btn' bindtap='addAddressFun'>添加地址</button>

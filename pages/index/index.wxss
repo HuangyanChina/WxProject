@@ -1,0 +1,44 @@
+/**index.wxss**/
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.titleTap{
+  text-align: center;
+  background: red;  
+  width: 100rpx; 
+}
+.navtitlewarp{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.navititle_child{
+  font-size: 32rpx;
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 150rpx; 
+  background: rgba(	220,20,60, 0.3);
+  border: 5px solid rgba(	220,20,60, 0.1);
+  text-align: center;
+  line-height: 150rpx;
+}
+.bottomwarp image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.bottomwarp{
+  display: flex;
+  justify-content: space-between;
+}
+.bottomlink{
+  border-right: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.userinfoindex{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

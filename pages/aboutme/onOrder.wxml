@@ -1,0 +1,31 @@
+<view class='owerAdrress'>
+  <view class='myAdrress' wx:for = "{{myAdrress}}" wx:for-item = "item" wx:key = "key"  wx:if = "{{item.is_defalut == 'true'}}">
+      <view>
+        <view>{{item.address_value}}</view>
+        <view><text>{{item.name}}</text><text>{{item.people_tel}}</text></view>
+      </view>
+  </view>
+  <view>订单信息</view>
+</view>
+
+<view class='my_order_info'>
+  <view class='my_order_show' wx:for = "{{onPayPrj}}" wx:for-item = "item" wx:key = "key">
+    <view>
+      <image src='{{item.prj_image}}' style='height:150rpx;width:150rpx;margin:25rpx'></image>
+    </view>
+
+    <view>
+      <view>{{item.name}}</view>
+      <view>7天无理由退货</view>
+
+    </view>
+    <view>
+      <view>{{item.prj_price}}</view>
+      <view>x{{item.prj_num}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='pay_off_bottom'>
+  <text>合计:￥{{allMoney}}</text> <button bindtap='placeOrder'>提交订单</button>
+</view>

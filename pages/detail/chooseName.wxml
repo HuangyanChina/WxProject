@@ -1,0 +1,18 @@
+<!-- <view>这是品牌{{detailname}}</view> -->
+<view class='fileproduct'>
+  <view class='active'>有货</view>
+  <view>价格</view>
+  <view>折扣</view>
+</view>
+<view class='project_list'>
+  <!-- <navigator></navigator> -->
+  <navigator hover-class='none' url='prjDetail?id={{index}}' wx:for = "{{productJsonArray}}" wx:for-item = "item" wx:key = "key" data-id = "{{item.id}}">
+    <image  data-index="{{ index }}" data-width = "350"  bindload="imageLoad" mode='heightFix' src='https://www.zgzhy.cc/img/{{item.src}}' style="width:{{ images[0].width }}rpx; height:{{ images[0].height }}rpx;"></image>
+   
+    <view class='texeEclipese' style='font-size:30rpx;color:#333;margin:0 10rpx'><text style='color:#F16B00;margin-right:5px' class="fa fa-arrow-right"></text>{{item.prj_descript}}</view>  
+    <view class='card_title' style='line-height:60rpx;margin-top:20rpx;margin-bottom:20rpx'> 
+      <text style='margin:0 10rpx'>{{item.prj_name}}</text>
+      <text style='color:red;line-height:60rpx;font-size:30rpx'>¥{{item.prj_price}}</text>
+    </view>
+  </navigator>
+</view>

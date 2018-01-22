@@ -1,0 +1,111 @@
+.searchInput{
+  border: 1px solid #fff;
+  background: #F4F4F4;
+  height: 80rpx;
+  border-radius: 80rpx;
+  width: 650rpx;
+  font-size: 30rpx;
+  text-align: center;
+  /* display: flex */
+}
+.needflex{
+  width: 15%
+  /* display: flex */
+}
+.lookmore{
+  width: 15%
+  /* display: flex */
+}
+.flexwarp{
+  width: 750rpx;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+}
+.tab-scoller {
+  /* background: linear-gradient(to bottom, #2262fc, rgba(57, 134, 222, 0.84)); */
+  position: fixed;
+  top: 97rpx;
+  background: #fff;
+  border-bottom: 1px solid #F2F2F2;
+  height: 74rpx;
+  white-space: nowrap;
+  display: flex;
+}
+/*取消移动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  /* color: transparent; */
+}
+
+.active {
+  color: #D24492 !important;
+  background-color: #fff;
+  border-bottom: 2px solid #D24492; 
+}
+
+.tab-view {
+  text-align: center;
+  /* color: #fff; */
+  color: #333;
+  font-size: 1rem;
+  height: 1.2rem;
+  width: 4rem;
+  /* margin-top: 1rem; */
+  border-right: 1px solid #fff;
+  display: inline-block;
+  line-height: 1.2rem;
+}
+
+.tab-text {
+  display: block;
+  position: relative;
+  height: 1.5rem;
+  padding: 0.3rem 0.2rem 0;
+  color: #333;
+}
+.production_card_warp{
+   background-color: #EDEDED;
+   width: 100%;
+   margin-top: 174rpx;
+}
+.productionCard{
+  background: #fff;
+  margin-top: 25rpx;
+  margin-bottom: 5px;
+}
+.product_name{
+  text-indent: 20rpx;
+  font-size: 35rpx;
+  color: #313131;
+  margin-top: 20rpx;
+}
+.product_descript{
+  color: #536EC1;
+  font-size: 30rpx;
+  text-indent: 20rpx;
+  line-height: 80rpx;
+}
+
+/* 类型选择样式 */
+.classfiywarp{
+  display: flex;
+  flex-flow: row wrap;
+  left: 0;
+  right: 0;
+  background: yellow;
+  z-index: 999;
+  position: absolute;
+  top: 24px;
+  padding: 5px 0 0 0;
+}
+.classifybtn{
+  text-align: center;
+  background: #fff;
+   width: 70px; 
+   margin-bottom: 5px;
+}

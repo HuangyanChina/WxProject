@@ -1,0 +1,50 @@
+/* pages/detail/chooseName.wxss */
+.fileproduct{
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  position: fixed;
+  width: 100%;
+  top: 0
+}
+.fileproduct>view{
+  line-height: 40px;
+  font-size: 16px;
+}
+.fileproduct>view.active{
+  color: red;
+}
+.project_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  background: #F4F4F4;
+
+  margin-top: 40px;
+}
+.project_list>navigator{
+  padding-bottom: 600rx;
+  background-color: #fff;
+  width: 350rpx;
+  border: 1px solid rgba(220, 220, 220, 0.8);
+  margin: 0 10rpx 20rpx 10rpx;
+  font-size: 35rpx;
+}
+.project_list>navigator>view{
+   white-space:pre-wrap;
+}
+.project_list>navigator>image{
+  width: 100%;
+}
+.texeEclipese {
+    display: -webkit-box;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    font-size: 32rpx;
+    overflow: hidden;
+    width: 350rpx;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+}

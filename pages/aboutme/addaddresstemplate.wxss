@@ -1,0 +1,6 @@
+/* pages/aboutme/addaddresstemplate.wxss */
+.add_class{
+  position: absolute;
+  bottom: 0;
+  width: 750rpx;
+}

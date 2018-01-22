@@ -1,0 +1,151 @@
+/* pages/detail/prjDetail.wxss */
+.btn_warp{
+    position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+   align-items: center;
+  justify-content: space-around;
+  height: 110rpx;
+  background: #fff;
+  display: flex; 
+}
+.btn_warp navigator{
+  width: 250rpx;
+}
+.btn_warp>button{
+  font-size: 14px;
+  height: 80rpx;
+  border-radius: 0px;
+  line-height: 80rpx;
+}
+.btn_warp>button::after{
+  border:1px solid #ccc;
+  border-radius:0;
+}
+.btn_warp>button:first-child{
+  width: 250rpx;
+  color: #4C4C4C;
+  font-size: 40rpx;
+  background-color: #fff;
+  border:1px solid #E8E8E8;
+}
+.btn_warp>button:last-child{
+  width: 60%;
+  color: #fff;
+  background-color:  #CD4A93;
+  border-color: #CD4A93;
+}
+
+/* 基本信息模块 */
+.prj_name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+.prj_name .fa{
+  color: red;
+}
+.base_info_warp{
+  padding:20rpx 20rpx 0;
+
+}
+.base_info_warp>view{
+  line-height: 70rpx;
+}
+.prj_price{
+  color: #EC6633;
+}
+.prj_discount{
+  font-size: 28rpx;
+  color: #9B9BA1;
+  text-decoration: line-through;
+}
+
+/* 优惠券大小选择 */
+.card_size{
+  display: flex;
+  flex-direction: column;
+  background:	#F3F3F4;
+  width: 750rpx;
+}
+.card_size>view{
+  color: #6A6A6A;
+  padding: 18rpx 0;
+  font-size: 30rpx;
+  line-height: 47rpx;
+  background: #F9F9F9;
+  width: 750rpx;
+  text-indent: 10rpx;
+  border-bottom: 1px solid 	rgba(220,220,220,0.7);
+  margin-top: 10rpx; 
+}
+.card_size>view .fa:nth-child(even){
+  float: right;
+  margin-right: 30rpx;
+}
+.card_size>view .fa:nth-child(odd){
+  margin-right: 10rpx;
+}
+
+/* 显示背景阴影 */
+.bg_black,.bg_black_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+.bg_black_bg{
+  z-index: 9998;
+  background: rgba(0,0,0,0.1);
+}
+
+/* 关闭优惠券页面弹窗 */
+.off_card_button{
+  position:absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: #EB5F29;
+  color: #fff;
+}
+#off_card_warp{
+  background:#fff;
+  height:750rpx;
+  width:750rpx;
+  position:fixed;
+  bottom:-750rpx;
+  z-index:9999
+}
+.off_card_detail{
+  color:#fff;
+  background:#E8B14A;
+  width:710rpx;
+  margin:0 20rpx 20rpx 20rpx;
+  height:176rpx;
+  border-left:1px dotted #E8B14A;
+  display: flex;
+  flex-direction: row
+}
+.off_card_detail>view:first-child{
+  width: 500rpx;
+  border-right: 1px dotted #fff;
+}
+.get_off_card{
+  width: 225rpx;
+  text-align: center;
+  line-height: 176rpx;
+  font-size: 30rpx;
+}
+.off_card_list{
+   position: absolute;
+  top: 0rpx;
+  width: 750rpx;
+  bottom: 90rpx;
+  overflow-y: auto; 
+}
+
